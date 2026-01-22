@@ -106,6 +106,18 @@ class TestFizzBuzzValidation:
             fizzbuzz({"n": 10})
         assert "整数である必要があります" in str(exc_info.value)
 
+    def test_fizzbuzz_with_bool_true(self):
+        """bool型(True)でTypeErrorが発生することをテスト"""
+        with pytest.raises(TypeError) as exc_info:
+            fizzbuzz(True)
+        assert "整数である必要があります" in str(exc_info.value)
+
+    def test_fizzbuzz_with_bool_false(self):
+        """bool型(False)でTypeErrorが発生することをテスト"""
+        with pytest.raises(TypeError) as exc_info:
+            fizzbuzz(False)
+        assert "整数である必要があります" in str(exc_info.value)
+
 
 class TestPrintFizzBuzz:
     """print_fizzbuzz関数のテストクラス"""

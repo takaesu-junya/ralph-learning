@@ -23,8 +23,8 @@ def fizzbuzz(n):
         TypeError: nが整数でない場合
         ValueError: nが1未満の場合
     """
-    # 型チェック
-    if not isinstance(n, int):
+    # 型チェック (boolはintのサブクラスなので明示的に除外)
+    if not isinstance(n, int) or isinstance(n, bool):
         raise TypeError(f"引数は整数である必要があります。与えられた型: {type(n).__name__}")
 
     # 値の範囲チェック
@@ -33,7 +33,7 @@ def fizzbuzz(n):
 
     result = []
     for i in range(1, n + 1):
-        if i % 15 == 0:
+        if i % 3 == 0 and i % 5 == 0:
             result.append("FizzBuzz")
         elif i % 3 == 0:
             result.append("Fizz")
