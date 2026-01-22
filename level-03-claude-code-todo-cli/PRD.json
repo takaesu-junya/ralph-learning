@@ -1,0 +1,53 @@
+{
+  "project": "To-Do List CLI",
+  "stories": [
+    {
+      "id": 1,
+      "title": "プロジェクトセットアップとデータ構造の定義",
+      "criteria": "requirements.txt、pytest.iniが作成され、pip install -r requirements.txtとpytestが成功する。todos.jsonのデータ構造が定義される",
+      "done": false
+    },
+    {
+      "id": 2,
+      "title": "タスク追加機能（Create）",
+      "criteria": "python src/main.py add 'タスク名' でtodos.jsonに新しいタスクが追加される。タスクにはid、title、completed、createdAtが含まれる",
+      "done": false
+    },
+    {
+      "id": 3,
+      "title": "タスク一覧表示機能（Read - list）",
+      "criteria": "python src/main.py list で全てのタスクが表示される。完了・未完了の状態も表示される",
+      "done": false
+    },
+    {
+      "id": 4,
+      "title": "タスク詳細表示機能（Read - show）",
+      "criteria": "python src/main.py show <id> で指定したIDのタスク詳細が表示される",
+      "done": false
+    },
+    {
+      "id": 5,
+      "title": "タスク完了状態の更新機能（Update）",
+      "criteria": "python src/main.py complete <id> でタスクの完了状態をトグルできる",
+      "done": false
+    },
+    {
+      "id": 6,
+      "title": "タスク内容の更新機能（Update）",
+      "criteria": "python src/main.py update <id> '新しいタスク名' でタスクのタイトルを更新できる",
+      "done": false
+    },
+    {
+      "id": 7,
+      "title": "タスク削除機能（Delete）",
+      "criteria": "python src/main.py delete <id> でタスクを削除できる",
+      "done": false
+    },
+    {
+      "id": 8,
+      "title": "エラーハンドリングの実装",
+      "criteria": "存在しないIDの指定、不正なコマンドなどで適切なエラーメッセージが表示される",
+      "done": false
+    }
+  ]
+}

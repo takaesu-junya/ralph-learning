@@ -1,0 +1,14 @@
+# To-Do List CLI - Progress Log
+
+## プロジェクト開始
+- 2026-01-22: プロジェクトをFizzBuzzからTo-Do List CLIに変更
+- 2026-01-22: 技術スタックをTypeScript/Node.jsからPythonに変更
+- 目標: 完全なCRUD操作を持つTo-Doリスト管理CLIツールの開発
+
+## 技術スタック
+- Python 3.x
+- pytest（テストフレームワーク）
+- JSON（データ保存形式）
+
+## 実装履歴
+(実装が完了したストーリーはここに記録されます)
